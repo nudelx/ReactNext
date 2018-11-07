@@ -1,5 +1,5 @@
 import React from 'react'
-import { cardState } from './states/cardState'
+import { useCardState } from './states/cardState'
 import { Emoji, lorem, gitImage } from './cardUtils'
 const User = React.memo(
   React.lazy(
@@ -8,7 +8,7 @@ const User = React.memo(
 )
 
 export default ({ title }) => {
-  const { like, setLike } = cardState()
+  const { like, setLike } = useCardState()
   const onLike = () => setLike(like + 1)
   const onDislike = () => setLike(like ? like - 1 : like)
 
