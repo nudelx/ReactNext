@@ -8,6 +8,8 @@ class App extends Component {
       <div className="App">
         <Card title="nirtzur" />
         <Card title="nudelx" />
+        <Card title="orlavy" />
+        <Card title="rond" />
       </div>
     )
   }
