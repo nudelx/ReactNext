@@ -14,3 +14,6 @@ exercitation officia. Exercitation proident consequat cupidatat elit
 anim cupidatat. Aliqua labore occaecat magna eiusmod sint nisi
 reprehenderit duis cillum anim. Mollit labore aute duis mollit minim
 aute consectetur pariatur est amet ex dolor sit.`
+
+export const loadWithPromise = () =>
+  new Promise((yes, no) => setTimeout(() => yes(222), 200))

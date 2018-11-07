@@ -1,6 +1,9 @@
 import React from 'react'
 import { cardState } from './states/cardState'
 import { Emoji, lorem, gitImage } from './cardUtils'
+const User = React.lazy(
+  () => new Promise(yes => setTimeout(() => yes(import('./user')), 10000))
+)
 
 export default ({ title }) => {
   const { like, setLike } = cardState()
@@ -10,7 +13,9 @@ export default ({ title }) => {
   return (
     <div className="card">
       <div className="title inline">
-        <img className="image" alt={title} src={`${gitImage}${title}`} />
+        <React.Suspense fallback={<div>Loading...</div>}>
+          <User title={title} gitImage={gitImage} />
+        </React.Suspense>
         <div>{title} </div>
         <Emoji i={'❤️'} extra={like} className="likes" />
       </div>
