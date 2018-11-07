@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
-import Card from './components/card'
+// import Card from './components/card'
+import Card from './components/cardHooks'
 
 class App extends Component {
   render() {
