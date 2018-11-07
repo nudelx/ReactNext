@@ -1,8 +1,10 @@
 import React from 'react'
 import { cardState } from './states/cardState'
 import { Emoji, lorem, gitImage } from './cardUtils'
-const User = React.lazy(
-  () => new Promise(yes => setTimeout(() => yes(import('./user')), 10000))
+const User = React.memo(
+  React.lazy(
+    () => new Promise(yes => setTimeout(() => yes(import('./user')), 10000))
+  )
 )
 
 export default ({ title }) => {
