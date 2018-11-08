@@ -8,9 +8,9 @@ class App extends Component {
     return (
       <div className="App">
         <Card title="nirtzur" />
-        <Card title="nudelx" />
+        {/* <Card title="nudelx" />
         <Card title="avidanfeldman" />
-        <Card title="Goralt" />
+        <Card title="Goralt" /> */}
       </div>
     )
   }
