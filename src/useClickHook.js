@@ -2,7 +2,7 @@ import React from 'react'
 export default init => {
   const [click, setClick] = React.useState(init)
   const onClick = () => setClick(click + 1)
-  //cDM √
+  //cDM √ cDU √
   React.useEffect(
     () => {
       if (click > 10) {

@@ -10,7 +10,8 @@ const User = React.memo(
 )
 
 export default ({ title }) => {
-  const { onChange, like } = useCardState(0)
+  // 🤓 ☝️ convention convention convention
+  const { onChange, like, onLike, onDisLike } = useCardState(0) // any API
   const { click, onClick } = useClickHook(0)
 
   return (
@@ -28,7 +29,7 @@ export default ({ title }) => {
       </div>
       <div className="body">{lorem}</div>
       <div className="footer">
-        <button onClick={onChange.bind(null, '+') /* or onLike*/}>
+        <button onClick={onChange.bind(null, '+') /* or use onLike*/}>
           <Emoji i="👍" />
         </button>
         <button onClick={onChange.bind(null, '-') /* or onDisLike*/}>
