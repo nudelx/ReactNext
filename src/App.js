@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
 import './App.css'
-// import Card from './components/card'
-import Card from './components/cardHooks'
+// import Card from './card'
+import CardNext from './cardNext'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Card title="nirtzur" />
-        {/* <Card title="nudelx" />
-        <Card title="avidanfeldman" />
-        <Card title="Goralt" /> */}
+        <CardNext title={'nudelx'} />
+        <CardNext title="nirtzur" />
+        <CardNext title="goralt" />
+        <CardNext title="avidanfeldman" />
       </div>
     )
   }
