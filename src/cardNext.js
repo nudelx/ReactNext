@@ -23,15 +23,15 @@ export default ({ title }) => {
             gitImagePath={gitImagePath}
             onClick={onClick}
           />
+          {click}
         </React.Suspense>
       </div>
       <div className="body">{lorem}</div>
       <div className="footer">
-        {click}
-        <button onClick={onChange.bind(null, '+')}>
+        <button onClick={onChange.bind(null, '+') /* or onLike*/}>
           <Emoji i="👍" />
         </button>
-        <button onClick={onChange.bind(null, '-')}>
+        <button onClick={onChange.bind(null, '-') /* or onDisLike*/}>
           <Emoji i="👎" />
         </button>
       </div>
