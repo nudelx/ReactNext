@@ -2,7 +2,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # React @ next
 
-- Hooks
-- Lazy + Suspense
-- Memo
--
+- Hooks √
+- Lazy + Suspense √
+- Memo √

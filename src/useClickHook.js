@@ -5,9 +5,10 @@ export default init => {
   //cDM √
   React.useEffect(
     () => {
-      // console.log('render')
-      // const t = click > 10 ? (document.body.style.background = 'red') : null
-      // return () => console.log('clean !!!')
+      if (click > 10) {
+        document.body.style.background = 'red'
+      }
+      return () => console.log('clean !!!')
     },
     [click]
   )
