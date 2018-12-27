@@ -19,6 +19,7 @@ export default props => {
   const { score, onLike, onDisLike } = useScore(0)
   const { headerClick, onChange } = useHeaderClick(0, props.onChange)
   const contextHook = React.useContext(React.createContext(context))
+
   const { title } = props
   return (
     <div className="card">
@@ -26,14 +27,14 @@ export default props => {
         <React.Suspense fallback={<Loading />}>
           <User title={title} score={score} />
         </React.Suspense>
-        <div>
+        {/* <div>
           Location:
           {contextHook.locale}
         </div>
         <div>
           TimeZone:
           {contextHook.timeZone}
-        </div>
+        </div> */}
       </div>
       <div className="body">
         {bodyText}
