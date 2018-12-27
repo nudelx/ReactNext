@@ -3,5 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # React @ next
 
 - Hooks √
+- Effects √
+- Context √
 - Lazy + Suspense √
 - Memo √
