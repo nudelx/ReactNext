@@ -1,29 +1,31 @@
 import React from 'react'
-import { lorem, gitImagePath, Emoji } from './cardUtils'
-export default class extends React.Component {
-  state = { like: 0 }
+import Emoji from './emoji'
+import User from './user'
+const bodyText =
+  'Incididunt veniam commodo consectetur irure irure velit aliqua laboris in ad deserunt laborum deserunt. Magna dolor quis qui in. Aliquip velit voluptate velit ex dolore ad reprehenderit officia velit sit ad. Mollit ipsum anim Lorem eu. Ex adipisicing officia qui anim id esse eiusmod anim aliqua mollit non. Velit consectetur ut voluptate duis excepteur velit quis veniam id deserunt ipsum ipsum sint laborum.'
 
-  onLike = () => this.setState(({ like }) => ({ like: like + 1 }))
+export default class extends React.Component {
+  state = { score: 0 }
+
+  onLike = () => this.setState(({ score }) => ({ score: score + 1 }))
   onDisLike = () =>
-    this.setState(({ like }) => ({ like: like ? like - 1 : like }))
+    this.setState(({ score }) => ({ score: score ? score - 1 : score }))
 
   render() {
     const { title } = this.props
-    const { like } = this.state
+    const { score } = this.state
     return (
       <div className="card">
-        <div className="title inline">
-          <img alt={title} src={`${gitImagePath}${title}`} />
-          <span>{title}</span>
-          <Emoji i="❤️" className="right-side" extra={like} />
+        <div className="title">
+          <User title={title} value={score} />
         </div>
-        <div className="body">{lorem}</div>
+        <div className="body">{bodyText}</div>
         <div className="footer">
           <button onClick={this.onLike}>
-            <Emoji i="👍" />
+            <Emoji i={'👍'} />
           </button>
           <button onClick={this.onDisLike}>
-            <Emoji i="👎" />
+            <Emoji i={'👎'} />
           </button>
         </div>
       </div>

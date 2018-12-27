@@ -1,13 +1,15 @@
 import React from 'react'
-import { Emoji } from './cardUtils'
+import Emoji from './emoji'
+const gitPath = 'https://avatars1.githubusercontent.com/'
 
-export default ({ title, gitImagePath, onClick, like }) => {
-  return (
-    <>
-      {' '}
-      <img alt={title} src={`${gitImagePath}${title}`} onClick={onClick} />
+export default ({ title, score }) => (
+  <div className="user">
+    <div className="title-holder">
+      <img src={`${gitPath}${title}`} alt={title} />
       <span>{title}</span>
-      <Emoji i="❤️" className="right-side" extra={like} />{' '}
-    </>
-  )
-}
+    </div>
+    <span>
+      <Emoji i={'❤️'} extra={score} />
+    </span>
+  </div>
+)
