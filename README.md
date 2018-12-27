@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # React @ next Meetup
 
-# Live Codding Session
+### Live Codding Session
 
 - Hooks √
 - Effects √
