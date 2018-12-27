@@ -8,9 +8,9 @@ class App extends Component {
     return (
       <div className="App">
         <CardNext title="nudelx" />
-        <CardNext title="nirtzur" />
-        <CardNext title="goralt" />
-        <CardNext title="avidanfeldman" />
+        <CardNext title="david" />
+        <CardNext title="itay" />
+        <CardNext title="ron" />
       </div>
     )
   }
