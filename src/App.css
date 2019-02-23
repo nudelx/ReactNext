@@ -85,3 +85,57 @@
   margin-right: 10px;
   border: 1px solid #fff;
 }
+
+.form {
+  border: 1px solid #ccc;
+  padding: 60px 40px;
+  display: inline-block;
+  box-shadow: 1px 1px 20px 0px #aaa;
+  min-width: 400px;
+}
+
+.form ul,
+.form li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.form li {
+  margin-bottom: 20px;
+}
+
+.form label {
+  display: block;
+  color: #aaa;
+  font-size: 14px;
+}
+.form h2 {
+  margin-bottom: 30px;
+}
+
+.form input {
+  padding: 8px 5px;
+  min-width: 300px;
+  color: #222;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.form button {
+  padding: 8px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 5px;
+  background-color: steelblue;
+  outline: none;
+  min-width: 100px;
+  cursor: pointer;
+}
+
+.form .error {
+  font-size: 10px;
+  color: red;
+  padding: 10px;
+}
