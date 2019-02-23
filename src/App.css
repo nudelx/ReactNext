@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  padding: 20px;
 }
 
 .App-logo {
@@ -29,4 +30,112 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.card {
+  width: 350px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  min-height: 200px;
+  margin: 10px;
+}
+
+.title {
+  /* border: 1px solid red; */
+  background-color: steelblue;
+  color: #fff;
+  padding: 0px 10px;
+}
+
+.body {
+  padding: 20px;
+}
+
+.footer {
+  padding: 20px;
+}
+
+.footer button {
+  background-color: steelblue;
+  padding: 5px 40px;
+  font-size: 20px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+}
+
+.title-holder {
+  display: flex;
+  justify-items: flex-start;
+  align-items: center;
+}
+
+.user img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 1px solid #fff;
+}
+
+.form {
+  border: 1px solid #ccc;
+  padding: 60px 40px;
+  display: inline-block;
+  box-shadow: 1px 1px 20px 0px #aaa;
+  min-width: 400px;
+}
+
+.form ul,
+.form li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.form li {
+  margin-bottom: 20px;
+}
+
+.form label {
+  display: block;
+  color: #aaa;
+  font-size: 14px;
+}
+.form h2 {
+  margin-bottom: 30px;
+}
+
+.form input {
+  padding: 8px 5px;
+  min-width: 300px;
+  color: #222;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.form button {
+  padding: 8px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 5px;
+  background-color: steelblue;
+  outline: none;
+  min-width: 100px;
+  cursor: pointer;
+}
+
+.form .error {
+  font-size: 10px;
+  color: red;
+  padding: 10px;
 }
