@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
 import './App.css'
-// import Card from './card'
+import Card from './card'
 import CardNext from './cardNext'
-import From from './form'
+// import From from './form'
 import FromHooks from './formHooks'
 
 class App extends Component {
   state = {
     userId: 22
   }
-  componentWillMount() {
+  componentDidMount() {
     setInterval(
       () => this.setState(state => ({ userId: state.userId + 1 })),
       3000
@@ -18,7 +18,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <FromHooks userId={this.state.userId} />
+        <Card color={'#ccc'} />
       </div>
     )
   }

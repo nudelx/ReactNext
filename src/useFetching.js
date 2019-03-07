@@ -10,17 +10,14 @@ export default props => {
   const [data, setData] = React.useState(null)
   const [loading, setLoading] = React.useState(false)
 
-  React.useEffect(
-    () => {
-      console.log('inside useEffect', props.userId)
-      setLoading(true)
-      API.begin({ userId: props.userId })
-        .then(data => setData(data))
-        .then(() => setLoading(false))
-        .catch(() => setLoading(false))
-    },
-    [props.userId]
-  )
+  React.useEffect(() => {
+    console.log('inside useEffect', props.userId)
+    setLoading(true)
+    API.begin({ userId: props.userId })
+      .then(data => setData(data))
+      .then(() => setLoading(false))
+      .catch(() => setLoading(false))
+  }, [props.userId])
 
   return {
     data,
